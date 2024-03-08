@@ -28,7 +28,7 @@ public class NewBehaviourScript : MonoBehaviour
         forwardInput = Input.GetAxis("Vertical");
 
         // We'll move the vehicle forward
-        transform.Translate(Vector3.forward * Time.deltaTime * speed * forwardInput);
+        transform.Translate(Vector3.forward * speed);
         // We turn the vehicle
         transform.Rotate(Vector3.up, Time.deltaTime * turnSpeed * horizontalInput);
 
